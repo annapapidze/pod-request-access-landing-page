@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+  <title>Pod request access landing page</title>
+</head>
+
+<body>
+  <div class="overlay">
+  <header class="header_div">
+    <img class="logo" src="./desktop/logo.svg" alt="logo">
+  </header>
+  <main class="main_div">
+    <div class="text_div">
+      <h1 class="heading">Publish your podcasts <span>everywhere.</span></h1>
+      <p class="para">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify,
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      <div id="email_div">
+        <input type="email" id="email_id" placeholder="Email address" oninput="chacker()">
+        <div id="green_red_div">
+          <p id="success_p">Your email is sent!</p>
+          <p id="error_p">Oops! Please check your email</p>
+        </div>
+      </div>
+      <button id="btn">Request Access</button>
+    </div>
+    <div class="logos_div">
+      <img class="pod1" src="./desktop/spotify.svg" alt="spotify" />
+      <img class="pod2" src="./desktop/apple-podcast.svg" alt="apple podcast" />
+      <img class="pod3" src="./desktop/google-podcasts.svg" alt="google podcasts" />
+      <img class="pod4" src="./desktop/pocket-casts.svg" alt="pocket casts" />
+    </div>
+  </main>
+  <footer class="footer_div">
+    <img class="footer_img" src="./desktop/bg-pattern-dots.svg" alt="bg pattern dots">
+  </footer>
+  </div>
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
